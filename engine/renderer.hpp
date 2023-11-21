@@ -6,7 +6,7 @@
 #include <cassert>
 #include <cmath>
 #include "rect.hpp"
-#include "omp.h"
+//#include "omp.h"
 #include "texture.hpp"
 
 class Renderer {

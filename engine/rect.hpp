@@ -5,6 +5,18 @@
 #include <string>
 #include "pos.hpp"
 
+#if defined(SF2000)
+namespace std
+{
+	std::string to_string(int i)
+	{
+		char str[20];
+		snprintf(str, sizeof(str), "%d", i);
+		return str;
+	}
+}
+#endif
+
 struct Rect
 {
     Rect() : x(0), y(0), w(0), h(0) {}
